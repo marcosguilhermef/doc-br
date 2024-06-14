@@ -1,6 +1,6 @@
 {
   "name": "doc-br",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Validação de documentos brasileiros para facilitar o desenvolvimento",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,19 @@
     "rg",
     "cnh"
   ],
-  "author": "marcosguilhermef <marcosguilhermefh@gmail.com> , ThiagoOFC <thiagofrancachaves@gmail.com>",
+  "author": "marcosguilhermef <marcosguilhermefh@gmail.com>",
+  "contributors" : [
+    {
+      "name" : "Marcos Guilherme",
+      "email" : "marcosguilhermefh@gmail.com",
+      "url" : "https://github.com/marcosguilhermef"
+    },
+    {
+      "name" : "ThiagoOFC <thiagofrancachaves@gmail.com>",
+      "email" : "thiagofrancachaves@gmail.com",
+      "url" : "https://github.com/ThiagoOFC"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marcosguilhermef/doc-br/issues"
