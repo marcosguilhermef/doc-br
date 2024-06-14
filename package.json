@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/marcosguilhermef/doc-br/issues"
   },
-  "homepage": "https://github.com/marcosguilhermef/doc-br#readme"
+  "homepage": "https://github.com/marcosguilhermef/doc-br#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
