@@ -1,5 +1,4 @@
-import {CnpjValidator} from "../validators/Cnpj";
-
+import {CnpjValidator} from "../index";
 describe('TESTAR GERAÇÃO E VALIDAÇÃO DE CNPJ',() => {
     test('TESTAR VALIDAÇÃO DE CNPJ', () => {
         const cpf = new CnpjValidator('25.450.139/0001-68')

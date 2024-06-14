@@ -1,4 +1,4 @@
-import {CpfValidator} from "../validators/Cpf";
+import {CpfValidator} from "../index";
 
 describe('TESTAR GERAÇÃO E VALIDAÇÃO DE CPF',() => {
     test('TESTAR VALIDAÇÃO DE CPF', () => {

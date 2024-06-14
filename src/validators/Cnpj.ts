@@ -6,6 +6,9 @@ import {Data} from "./Data";
 export default class CnpjValidator extends Validators {
     parameter?: string;
 
+    /**
+     * @param {string} parameter - CNPJ que deve ser validado. Caso você queria apenas gerar um CNPJ, esse campo pode ser deixado vazio
+     */
     constructor(parameter?: string){
         super();
         this.parameter = parameter;
@@ -14,13 +17,17 @@ export default class CnpjValidator extends Validators {
     asyncRun(): Promise<Sucesso | Erro> {
         throw new Error('Método não implementado para esse validator');
     }
-
+    /**
+     * @return {string} - Gera número de CNPJ falso. No entanto, pode passa por qualquer validador.
+     */
     falsify(): Data<String> {
         return {
             res: this.generate()
         }
     }
-
+    /**
+     * @return {Sucesso | Erro} - Verifica a validade de qualquer CNPJ. O CNPJ deve estar no formato com ou sem mascara.
+     */
     run(): Sucesso | Erro {
 
         if(!this.parameter){

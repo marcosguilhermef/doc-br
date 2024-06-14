@@ -6,6 +6,10 @@ import {Data} from "./Data";
 export default class CpfValidator extends Validators {
     parameter?: string;
 
+    /**
+     * @param {string} parameter - CPF que deve ser validado. Caso você queria apenas gerar um CPF, esse campo pode ser deixado vazio
+     */
+
     constructor(parameter?: string){
         super();
         this.parameter = parameter;
@@ -15,12 +19,17 @@ export default class CpfValidator extends Validators {
         throw new Error('Método não implementado para esse validator');
     }
 
+    /**
+     * @return {string} - Gera número de CPF falso. No entanto, pode passa por qualquer validador.
+     */
     falsify(): Data<String> {
         return {
             res: this.generate()
         }
     }
-
+    /**
+     * @return {Sucesso | Erro} - Verifica a validade de qualquer CPF. O CPF deve estar no formato com ou sem mascara.
+     */
     run(): Sucesso | Erro {
 
         if(!this.parameter){
