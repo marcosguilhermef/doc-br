@@ -3,7 +3,7 @@ import {Sucesso} from "./Sucesso";
 import {Erro} from "./Erro";
 import {Data} from "./Data";
 
-export class CpfValidator extends Validators {
+export default class CpfValidator extends Validators {
     parameter?: string;
 
     constructor(parameter?: string){
