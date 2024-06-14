@@ -1,11 +1,13 @@
 {
   "name": "doc-br",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Validação de documentos brasileiros para facilitar o desenvolvimento",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "/dist"
+    "/dist",
+    "!/dist/__tests__",
+    "!/dist/__tests__/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
